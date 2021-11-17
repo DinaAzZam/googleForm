@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+           <meta charset="utf-8" />
+           <title> Registeration Form </title>
+        </head>
+        <body>
+            <h1>Register Form</h1>
+            <p>Fill the form below accurately indicating your potentials and suitability to job applying for.</p>
+            
+            <form method ="post" action="form.php">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <!-- Name -->
+                    <label>Name</label><br>
+                    <input type="text" placeholder="First Name" autofocus="on" autocomplete="off" required /> &nbsp;
+                    <input type="text" placeholder="Last Name" autofocus="on" autocomplete="off" required /><br><br>
+                    
+                    <!-- Birthdate -->
+                    <label>Birthdate</label><br>
+                    <input type="date" name="date">
+                    <br><br>
+                    
+                    <!-- E-mail -->
+                    <label>E-mail</label><br>
+                    <input type="email" name="email" autocomplete="off" multiple required />
+                    <br><br>
+                    
+                    <!-- Password -->
+                    <label>Password</label><br>
+                    <input type="password" name="password" autocomplete="off" required />
+                    <br><br>
+                    
+                    <!-- Address -->
+                    <label>Address</label><br>
+                    <input type="text" name="address" />
+                    <br><br>
+                    
+                    <!-- CV -->
+                    <label>Upload Your CV</label>
+                    <input type="file" required />
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Some Questions</legend>
+                    
+                    <!-- Question 1-->
+                    <label>What is your GPA?</label> <br><br>
+                    <input type="radio">3.50<br>
+                    <input type="radio">3.00<br>
+                    <input type="radio">2.50<br>
+                    <input type="radio">2.00<br>
+                    <input type="radio">1.50<br>
+                    <input type="radio">1.00<hr>
+                    
+                    <!-- Question 2-->
+                    <label>What is your education level?</label><br><br>
+                    <select name="education">
+                        <option>High School</option>
+                        <option>Associates</option>
+                        <option>Bachelor's</option>
+                    </select><hr>
+                    
+                    <!-- Question 3-->
+                    <label>Have you ever applied to / worked for Our Company?</label><br><br>
+                    <input type="radio">Yes
+                    <input type="radio">No <br><hr>
+                    
+                    <!-- Question 4-->
+                    <label>What is your current employment status?</label> <br><br>
+                    <input type="checkbox">Employed <br>
+                    <input type="checkbox">Self-Employed <br>
+                    <input type="checkbox">Unemployed <br>
+                    <input type="checkbox">Student <hr>
+                    
+                    <!-- Question 5-->
+                    <label>What are your skills? </label><br>
+                    <textarea></textarea> <br>
+                    <input type="submit" value="Send Your Data" />
+                </fieldset>
+            </form>
+        </body>
+    </html>
